@@ -1,0 +1,138 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ .styled-form {
+    max-width: 500px;                    /* Limitar el ancho del formulario */
+    margin: 50px auto;                   /* Centrar el formulario en la página */
+    padding: 30px;                       /* Espacio interno del formulario */
+    background-color: #f5f7fa;           /* Fondo claro */
+    border-radius: 10px;                 /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra para profundidad */
+    font-family: Arial, sans-serif;      /* Fuente general */
+  }
+  
+  .styled-form h2 {
+    color: #d9534f;                      /* Color rojo para mensajes de error */
+  }
+  
+  .error-messages {
+    color: #d9534f;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    list-style: none;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .form-actions {
+    text-align: center;
+  }
+  
+  .form-actions input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-actions input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+
+  
+  .notice-message {
+  color: #007bff;             /* Azul llamativo para mensajes */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.title {
+  color: #333;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+#usuarios-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+.usuario-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.usuario-link {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.usuario-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.usuario-link a:hover {
+  text-decoration: underline;
+}
+
+.new-user-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #28a745;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.new-user-link:hover {
+  color: #218838;
+}

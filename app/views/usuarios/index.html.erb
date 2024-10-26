@@ -1,0 +1,18 @@
+<p class="notice-message"><%= notice %></p>
+
+<% content_for :title, "Usuarios" %>
+
+<h1 class="title">Usuarios</h1>
+
+<div id="usuarios-list">
+  <% @usuarios.each do |usuario| %>
+    <div class="usuario-item">
+      <%= render usuario %>
+      <p class="usuario-link">
+        <%= link_to "Ver detalles del usuario", usuario %>
+      </p>
+    </div>
+  <% end %>
+</div>
+
+<%= link_to "Nuevo usuario", new_usuario_path, class: "new-user-link" %>
